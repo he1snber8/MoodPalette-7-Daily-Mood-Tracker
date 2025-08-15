@@ -1,0 +1,5 @@
+<div class="heatmap">
+  <div *ngFor="let day of Object.keys(moodMap)">
+    <div [style.background]="moodMap[day]" class="cell">{{ day }}</div>
+  </div>
+</div>
